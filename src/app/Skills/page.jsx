@@ -335,7 +335,7 @@ function page() {
                     : setNumListProject(3);
                 }}
               >
-                <h6 className="text-3xl">
+                <h6 className="text-3xl cursor-pointer">
                   {listProject ? ". . .Show more. . ." : ". . .Hide. . ."}
                 </h6>
               </div>
