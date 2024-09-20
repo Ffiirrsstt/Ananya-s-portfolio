@@ -68,6 +68,8 @@ function DisplayProjects(props) {
           curPage={pageProject}
           sendPage={(dataPage) => setPageProject(dataPage)}
           sendResetReadHide={(data) => setHideReadProject(data)}
+          //ใส่ไม่ให้ขึ้นแจ้ง error แต่มันอยู่ด้านบนอยู่แล้ว ไม่ต้องสกอร์บาร์ขึ้น
+          sendScrollToProject={() => {}}
         />
       </div>
 
