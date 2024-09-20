@@ -5,7 +5,7 @@ import {
   titleProject,
   languagesProject,
   languagesProjectData,
-} from "../../database/ImportSkills";
+} from "../../../database/ImportSkills";
 import { useRef, useState } from "react";
 
 function DisplayListProjects() {

@@ -3,15 +3,20 @@ import {
   txtDataProject,
   linkProject,
   titleProject,
-} from "../../database/ImportSkills";
+} from "../../../database/ImportSkills";
 
 import Link from "next/link";
-import PageProject from "../../components/Skills/PageProject";
-import ProjectSlider from "../../components/Skills/ProjectSlider";
+import PageProject from "./PageProject";
+import ProjectSlider from "./ProjectSlider";
 import { useRef, useState } from "react";
 
 function DisplayProjects(props) {
-  const { openImg } = props;
+  const {
+    openImg,
+    sendImgForOpenProjects,
+    sendOpenImgProjects,
+    sendTxtShowImgProjects,
+  } = props;
   const [pageProject, setPageProject] = useState(0);
   const [hideReadProject, setHideReadProject] = useState(true);
 
@@ -70,29 +75,31 @@ function DisplayProjects(props) {
         <ProjectSlider
           dataArray={imageDataProject[pageProject].slice(0, 4)}
           txt={txtDataProject[pageProject]}
-          sendImgForOpen={(img) => setImgForOpen(img)}
-          sendOpenImg={(data) => setOpenImg(data)}
-          sendTxtShowImg={(txt) => setTxtShowImg(txt)}
+          sendImgForOpen={(img) => sendImgForOpenProjects(img)}
+          sendOpenImg={(data) => sendOpenImgProjects(data)}
+          sendTxtShowImg={(txt) => sendTxtShowImgProjects(txt)}
         />
       ) : (
         <ProjectSlider
           dataArray={imageDataProject[pageProject]}
           txt={txtDataProject[pageProject]}
-          sendImgForOpen={(img) => setImgForOpen(img)}
-          sendOpenImg={(data) => setOpenImg(data)}
-          sendTxtShowImg={(txt) => setTxtShowImg(txt)}
+          sendImgForOpen={(img) => sendImgForOpenProjects(img)}
+          sendOpenImg={(data) => sendOpenImgProjects(data)}
+          sendTxtShowImg={(txt) => sendTxtShowImgProjects(txt)}
         />
       )}
 
       {
         <div
           className="bg-[#e1e1e1] h-12 md:h-16 lg:h-24 flex justify-center items-center rounded-b-lg"
-          onClick={() => setHideReadProject(!hideReadProject)}
+          onClick={() => {
+            setHideReadProject(!hideReadProject);
+            scrollToProject();
+          }}
         >
           <h6
             className="text-3xl min-h-fit text-[#0088b1]
         hover:text-[#47abcb] cursor-pointer"
-            onClick={() => scrollToProject()}
           >
             {hideReadProject ? ". . .Show more. . ." : ". . .Hide. . ."}
           </h6>

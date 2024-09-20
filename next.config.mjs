@@ -3,10 +3,14 @@ const nextConfig = {
   images: {
     domains: [
       "th.bing.com",
-      "umangsoftware.com",
+      "capnis.com",
+      "cdn4.iconfinder.com",
       "cdn1.iconfinder.com",
-      "www.creasystem.com",
       "creazilla-store.fra1.digitaloceanspaces.com",
+      "download.logo.wine",
+      "umangsoftware.com",
+      "www.safike.com",
+      "www.creasystem.com",
       "replit.com",
       "raw.githubusercontent.com",
     ],

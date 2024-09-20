@@ -4,11 +4,16 @@ import Nav from "../components/components/Nav";
 import ShowImgFull from "../components/components/ShowImgFull";
 import { useState } from "react";
 
-import Skills from "../components/Skills/Skills";
+import ProgrammingLanguages from "../components/Skills/Skills/ProgrammingLanguages";
+import FrameworksLibraries from "../components/Skills/Skills/FrameworksLibraries";
+// import Databases from "../components/Skills/Skills/Databases";
+// import DevOps from "../components/Skills/Skills/DevOps";
+import Tools from "../components/Skills/Skills/Tools";
+
 import Certificate from "../components/Skills/Certificate";
 
-import DisplayListProjects from "../components/Skills/DisplayListProjects";
-import DisplayProjects from "../components/Skills/DisplayProjects";
+import DisplayListProjects from "../components/Skills/Projects/DisplayListProjects";
+import DisplayProjects from "../components/Skills/Projects/DisplayProjects";
 import PortfolioVideo from "../components/Skills/PortfolioVideo";
 import Artwork from "../components/Skills/Artwork";
 import Activities from "../components/Skills/Activities";
@@ -40,10 +45,21 @@ function Page() {
             sendTxtShowImgActivities={(txt) => setTxtShowImg(txt)}
           />
 
-          <Skills />
+          <div className="space-y-10">
+            <ProgrammingLanguages />
+            <FrameworksLibraries />
+            {/* <Databases /> */}
+            {/* <DevOps /> */}
+            <Tools />
+          </div>
 
           <DisplayListProjects />
-          <DisplayProjects openImg={openImg} />
+          <DisplayProjects
+            openImg={openImg}
+            sendImgForOpenProjects={(img) => setImgForOpen(img)}
+            sendOpenImgProjects={(data) => setOpenImg(data)}
+            sendTxtShowImgProjects={(txt) => setTxtShowImg(txt)}
+          />
 
           <Certificate
             sendOpenImg={() => setOpenImg(true)}
