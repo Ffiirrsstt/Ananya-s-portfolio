@@ -1,6 +1,6 @@
 import Image from "next/image";
 import imgMe from "../../public/me.jpg";
-import Nav from "./components/Nav";
+import Nav from "./components/components/Nav";
 
 export default function Home() {
   return (

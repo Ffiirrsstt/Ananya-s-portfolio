@@ -1,14 +1,14 @@
 "use client";
 
-import Nav from "../components/Nav";
+import Nav from "../components/components/Nav";
 import Image from "next/image";
-import ShowImgFull from "../components/ShowImgFull";
+import ShowImgFull from "../components/components/ShowImgFull";
 import secondary_School_1 from "../../../public/Secondary-School-Academic-Achievements-page-1.jpg";
 import secondary_School_2 from "../../../public/Secondary-School-Academic-Achievements-page-2.jpg";
 import university_1 from "../../../public/academic-Achievements-at-the-University-Level-page-1.png";
 import university_2 from "../../../public/academic-Achievements-at-the-University-Level-page-2.png";
 import { useState } from "react";
-function page() {
+function Page() {
   const [openImg, setOpenImg] = useState(false);
   const [imgForOpen, setImgForOpen] = useState();
   const [txtShowImg, setTxtShowImg] = useState("");
@@ -61,7 +61,7 @@ function page() {
             <li className="ml-8 lg:ml-20">
               <div
                 className="flex flex-col md:flex-row items-center justify-between my-8 font-bold 
-              text-lg md:text-2xl block border-b border-black"
+              text-lg md:text-2xl border-b border-black"
               >
                 <h3>Secondary School Academic Achievements</h3>
                 <h3 className="w-full text-center md:w-fit mb-2 py-2 px-6 bg-[#263a44] rounded-lg text-white">
@@ -109,4 +109,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

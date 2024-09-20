@@ -1,8 +1,8 @@
 import me_about from "../../../public/me-about.jpg";
 import Image from "next/image";
-import Nav from "../components/Nav";
+import Nav from "../components/components/Nav";
 
-function page() {
+function Page() {
   return (
     <div className="flex flex-col h-screen">
       <Nav />
@@ -10,7 +10,11 @@ function page() {
         <div className="w-2/5 h-full bg-[#ececec] flex flex-col justify-center">
           <div className="h-4/5 w-full flex items-center">
             <div className="flex h-full w-full items-center bg-[#263a44] rounded-b justify-center border-b border-black">
-              <Image src={me_about} className="md:w-3/5 h-4/5 rounded" />
+              <Image
+                src={me_about}
+                className="md:w-3/5 h-4/5 rounded"
+                alt="My picture"
+              />
             </div>
           </div>
           <div className="flex-1 flex items-center">
@@ -64,4 +68,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

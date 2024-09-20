@@ -1,10 +1,10 @@
-import Nav from "../components/Nav";
+import Nav from "../components/components/Nav";
 import Link from "next/link";
 import Image from "next/image";
 
 import github from "../../../public/github.png";
 
-function page() {
+function Page() {
   const ContactData = [
     { link: "https://github.com/Ffiirrsstt", src: github, titie: "My GitHub" },
     {
@@ -43,7 +43,7 @@ function page() {
           </h2>
           <div
             className="flex flex-col space-y-5 h-full w-full 
-          mb-2 block border-b border-black lg:mb-0 lg:border-0"
+          mb-2 border-b border-black lg:mb-0 lg:border-0"
           >
             {ContactData.map((data, index) => (
               <div key={index} className="flex space-x-5 lg:space-x-10">
@@ -79,4 +79,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

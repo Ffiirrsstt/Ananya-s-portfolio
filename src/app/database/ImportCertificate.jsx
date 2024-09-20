@@ -322,12 +322,17 @@ const dataAll = [
 
 export const dataAllTotal = [...dataAll, ...certificate_IotAi];
 
-export const sortCertificateToo = sortData(certificate_Too);
-export const sortCertificateCloud = sortData(certificate_Cloud);
-export const sortCertificateOthers = sortData(certificate_Others);
-export const sortCertificateSkills = sortData(certificate_Skills);
-export const sortCertificateLanguages = sortData(certificate_Languages);
-export const sortCertificateIotAi = sortData(certificate_IotAi);
+export const sortCertificateToo = sortData(certificate_Too).reverse();
+export const sortCertificateCloud = sortData(certificate_Cloud).reverse();
+export const sortCertificateOthers = sortData(certificate_Others).reverse();
+export const sortCertificateSkills = sortData(certificate_Skills).reverse();
+export const sortCertificateLanguages = sortData(
+  certificate_Languages
+).reverse();
+export const sortCertificateIotAi = sortData(certificate_IotAi).reverse();
 
 const dataAllSort = sortData(dataAll);
-export const dataAllTotalSort = [...dataAllSort, ...sortCertificateIotAi];
+export const dataAllTotalSort = [
+  ...dataAllSort.reverse(),
+  ...sortCertificateIotAi,
+];

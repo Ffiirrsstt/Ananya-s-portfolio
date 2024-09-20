@@ -1,5 +1,11 @@
 function PageProject(props) {
-  const { dataArray, curPage, sendPage, sendResetReadHide } = props;
+  const {
+    dataArray,
+    curPage,
+    sendPage,
+    sendResetReadHide,
+    sendScrollToProject,
+  } = props;
   return (
     <div className="my-5 flex space-x-5 justify-end">
       {dataArray.map((data, index) => (
@@ -8,6 +14,7 @@ function PageProject(props) {
           onClick={() => {
             sendPage(index);
             sendResetReadHide(true);
+            sendScrollToProject();
           }}
           disabled={curPage === index ? true : false}
           className={`${
