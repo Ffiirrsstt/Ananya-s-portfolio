@@ -2,7 +2,6 @@
 
 import Nav from "../components/components/Nav";
 import ShowImgFull from "../components/components/ShowImgFull";
-import Link from "next/link";
 import { useState } from "react";
 
 import Skills from "../components/Skills/Skills";

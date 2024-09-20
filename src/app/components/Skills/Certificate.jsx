@@ -1,11 +1,11 @@
 "use client";
 
-import { dataAllTotal } from "../../database/ImportCertificate";
+import { dataAllTotal } from "../../Services/cerificate/data-calculation";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import React from "react";
-import { setCertificateFromSelect } from "../../Services/certificate-services";
+import { setCertificateFromSelect } from "../../Services/cerificate/set-certificate";
 
 function Certificate({ sendOpenImg, sendImg, sendTxt }) {
   const [certificate, setCertificate] = useState(dataAllTotal);
@@ -46,7 +46,11 @@ function Certificate({ sendOpenImg, sendImg, sendTxt }) {
               <option value="certificateToo">
                 Technology and Software tools
               </option>
-              <option value="certificateCloud">cloud computing</option>
+              <option value="certificateCloud">Cloud computing</option>
+              <option value="certificateDevOps">DevOps</option>
+              <option value="certificateSoftwareArchitecture">
+                Software Architecture
+              </option>
               <option value="certificateSkills">
                 Computational Skills or Literacy
               </option>
