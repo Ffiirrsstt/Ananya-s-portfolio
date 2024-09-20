@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ImageVideoSlider from "../components/ImageVideoSlider";
 
-import { youtubeData } from "../../database/ImportSkills";
+import { youtubeData } from "../../database/Youtube";
 
 function PortfolioVideo() {
   const [pageVideo, setPageVideo] = useState(0);

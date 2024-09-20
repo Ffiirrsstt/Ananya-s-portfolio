@@ -1,10 +1,10 @@
-import coffee_1 from "../../../public/coffee-6-1.png";
-import coffee_2 from "../../../public/coffee-6-2.png";
-import coffee_3 from "../../../public/coffee-6-3.png";
-import coffee_4 from "../../../public/coffee-6-4.png";
-import coffee_5 from "../../../public/coffee-6-5.png";
-import coffee_6 from "../../../public/coffee-6-6.png";
-import coffee_7 from "../../../public/coffee-6-7.png";
+import coffee_1 from "../../../../public/coffee-6-1.png";
+import coffee_2 from "../../../../public/coffee-6-2.png";
+import coffee_3 from "../../../../public/coffee-6-3.png";
+import coffee_4 from "../../../../public/coffee-6-4.png";
+import coffee_5 from "../../../../public/coffee-6-5.png";
+import coffee_6 from "../../../../public/coffee-6-6.png";
+import coffee_7 from "../../../../public/coffee-6-7.png";
 
 export const imageDataCoffee = [
   coffee_1,

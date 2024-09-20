@@ -1,16 +1,16 @@
-import time_1 from "../../../public/time-8-1.png";
-import time_2 from "../../../public/time-8-2.png";
-import time_3 from "../../../public/time-8-3.png";
-import time_4 from "../../../public/time-8-4.png";
-import time_5 from "../../../public/time-8-5.png";
-import time_6 from "../../../public/time-8-6.png";
-import time_7 from "../../../public/time-8-7.png";
-import time_8 from "../../../public/time-8-8.png";
-import time_9 from "../../../public/time-8-9.png";
-import time_10 from "../../../public/time-8-10.png";
-import time_11 from "../../../public/time-8-11.png";
-import time_12 from "../../../public/time-8-12.png";
-import time_13 from "../../../public/time-8-13.png";
+import time_1 from "../../../../public/time-8-1.png";
+import time_2 from "../../../../public/time-8-2.png";
+import time_3 from "../../../../public/time-8-3.png";
+import time_4 from "../../../../public/time-8-4.png";
+import time_5 from "../../../../public/time-8-5.png";
+import time_6 from "../../../../public/time-8-6.png";
+import time_7 from "../../../../public/time-8-7.png";
+import time_8 from "../../../../public/time-8-8.png";
+import time_9 from "../../../../public/time-8-9.png";
+import time_10 from "../../../../public/time-8-10.png";
+import time_11 from "../../../../public/time-8-11.png";
+import time_12 from "../../../../public/time-8-12.png";
+import time_13 from "../../../../public/time-8-13.png";
 
 export const imageDataTime = [
   time_1,

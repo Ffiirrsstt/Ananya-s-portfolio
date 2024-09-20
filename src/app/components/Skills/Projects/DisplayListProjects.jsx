@@ -1,11 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  linkProject,
-  titleProject,
-  languagesProject,
-  languagesProjectData,
-} from "../../../database/ImportSkills";
+import { languagesProjectData } from "../../../database/projects-list/projects-data-languages";
+import { languagesProject } from "../../../database/projects-list/projects-languages";
+import { titleProject } from "../../../database/projects-list/projects-title";
+import { linkProject } from "../../../database/projects-list/projects-link";
 import { useRef, useState } from "react";
 
 function DisplayListProjects() {

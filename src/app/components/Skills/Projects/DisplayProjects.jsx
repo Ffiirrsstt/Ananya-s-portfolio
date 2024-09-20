@@ -1,9 +1,7 @@
-import {
-  imageDataProject,
-  txtDataProject,
-  linkProject,
-  titleProject,
-} from "../../../database/ImportSkills";
+import { imageDataProject } from "../../../database/projects/projects-images";
+import { txtDataProject } from "../../../database/projects/projects-txt";
+import { titleProject } from "../../../database/projects-list/projects-title";
+import { linkProject } from "../../../database/projects-list/projects-link";
 
 import Link from "next/link";
 import PageProject from "./PageProject";

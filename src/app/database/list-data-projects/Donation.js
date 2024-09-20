@@ -1,14 +1,14 @@
-import donation_1 from "../../../public/donation-10-1.png";
-import donation_2 from "../../../public/donation-10-2.png";
-import donation_3 from "../../../public/donation-10-3.png";
-import donation_4 from "../../../public/donation-10-4.png";
-import donation_5 from "../../../public/donation-10-5.png";
-import donation_6 from "../../../public/donation-10-6.png";
-import donation_7 from "../../../public/donation-10-7.png";
-import donation_8 from "../../../public/donation-10-8.png";
-import donation_9 from "../../../public/donation-10-9.png";
-import donation_10 from "../../../public/donation-10-10.png";
-import donation_11 from "../../../public/donation-10-11.png";
+import donation_1 from "../../../../public/donation-10-1.png";
+import donation_2 from "../../../../public/donation-10-2.png";
+import donation_3 from "../../../../public/donation-10-3.png";
+import donation_4 from "../../../../public/donation-10-4.png";
+import donation_5 from "../../../../public/donation-10-5.png";
+import donation_6 from "../../../../public/donation-10-6.png";
+import donation_7 from "../../../../public/donation-10-7.png";
+import donation_8 from "../../../../public/donation-10-8.png";
+import donation_9 from "../../../../public/donation-10-9.png";
+import donation_10 from "../../../../public/donation-10-10.png";
+import donation_11 from "../../../../public/donation-10-11.png";
 
 export const imageDataDonation = [
   donation_1,

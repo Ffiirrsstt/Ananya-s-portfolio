@@ -1,9 +1,9 @@
-import calculation_1 from "../../../public/calculation-5-1.png";
-import calculation_2 from "../../../public/calculation-5-2.png";
-import calculation_3 from "../../../public/calculation-5-3.png";
-import calculation_4 from "../../../public/calculation-5-4.png";
-import calculation_5 from "../../../public/calculation-5-5.png";
-import calculation_6 from "../../../public/calculation-5-6.png";
+import calculation_1 from "../../../../public/calculation-5-1.png";
+import calculation_2 from "../../../../public/calculation-5-2.png";
+import calculation_3 from "../../../../public/calculation-5-3.png";
+import calculation_4 from "../../../../public/calculation-5-4.png";
+import calculation_5 from "../../../../public/calculation-5-5.png";
+import calculation_6 from "../../../../public/calculation-5-6.png";
 
 export const imageDataCalculation = [
   calculation_1,

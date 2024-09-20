@@ -1,10 +1,10 @@
-import covid_1 from "../../../public/COVID-7-1.png";
-import covid_2 from "../../../public/COVID-7-2.png";
-import covid_3 from "../../../public/COVID-7-3.png";
-import covid_4 from "../../../public/COVID-7-4.png";
-import covid_5 from "../../../public/COVID-7-5.png";
-import covid_6 from "../../../public/COVID-7-6.png";
-import covid_7 from "../../../public/COVID-7-7.png";
+import covid_1 from "../../../../public/COVID-7-1.png";
+import covid_2 from "../../../../public/COVID-7-2.png";
+import covid_3 from "../../../../public/COVID-7-3.png";
+import covid_4 from "../../../../public/COVID-7-4.png";
+import covid_5 from "../../../../public/COVID-7-5.png";
+import covid_6 from "../../../../public/COVID-7-6.png";
+import covid_7 from "../../../../public/COVID-7-7.png";
 
 export const imageDataCovid = [
   covid_1,
