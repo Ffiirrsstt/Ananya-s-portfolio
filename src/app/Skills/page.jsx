@@ -25,12 +25,10 @@ function Page() {
 
   return (
     <>
-      <div className="bg-[#263a44]">
-        {/* <div className="bg-[#263a44]"> */}
+      <div className="bg-[var(--bg-main-edge)]">
         <Nav />
-        {/* <div className="py-20 flex-1 mx-auto space-y-20 "> */}
         <div
-          className="py-20 flex-1 mx-auto space-y-20 bg-[#ececec] flex flex-col 
+          className="py-20 flex-1 mx-auto space-y-20 bg-[var(--bg-main)] flex flex-col 
         md:w-11/12"
         >
           <PortfolioVideo />

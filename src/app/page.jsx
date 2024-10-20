@@ -4,10 +4,10 @@ import Nav from "./components/components/Nav";
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-screen bg-[#263a44]">
+    <main className="flex flex-col h-screen bg-[var(--bg-main-edge)]">
       <Nav />
       <div
-        className="md:flex-1 mx-auto  bg-[#ececec] flex flex-col md:flex-row items-center 
+        className="md:flex-1 mx-auto  bg-[var(--bg-main)] flex flex-col md:flex-row items-center 
       md:px-5 md:lg:px-20  md:w-11/12 md:space-x-5 lg:space-x-20 md:h-3/5"
       >
         <Image
@@ -21,7 +21,7 @@ export default function Home() {
        "
         >
           <div
-            className="w-100 overflow-auto p-4 rounded-lg bg-[#e1e1e1]
+            className="w-100 overflow-auto p-4 rounded-lg bg-[var(--bg-block-message)]
           my-10 mx-3 md:m-0 md:h-1/3"
           >
             <h2 className="text-lg ">

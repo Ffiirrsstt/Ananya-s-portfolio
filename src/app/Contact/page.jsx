@@ -45,7 +45,7 @@ function Page() {
             Contact
           </h2>
           <div
-            className="flex flex-col space-y-3 h-auto w-full 
+            className="flex flex-col  h-auto w-full 
           mt-2 md:mt-4 lg:mb-0"
           >
             {ContactData.map((data, index) => (

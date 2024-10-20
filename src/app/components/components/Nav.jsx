@@ -18,34 +18,25 @@ function Nav() {
               </h1>
             </Link>
 
-            <div className="hidden md:flex space-x-12">
-              <Link
-                href="/"
-                className=" text-gray-300 hover:text-white cursor-pointer"
-              >
+            <div className="hidden md:flex space-x-12 text-[var(--text-on-dark)]">
+              <Link href="/" className=" hover:text-white cursor-pointer">
                 Home
               </Link>
-              <Link
-                href="/About"
-                className=" text-gray-300 hover:text-white cursor-pointer"
-              >
+              <Link href="/About" className=" hover:text-white cursor-pointer">
                 About
               </Link>
-              <Link
-                href="/Skills"
-                className=" text-gray-300 hover:text-white cursor-pointer"
-              >
+              <Link href="/Skills" className=" hover:text-white cursor-pointer">
                 Skills
               </Link>
               <Link
                 href="/Education"
-                className=" text-gray-300 hover:text-white cursor-pointer"
+                className="  hover:text-white cursor-pointer"
               >
                 Education
               </Link>
               <Link
                 href="/Contact"
-                className=" text-gray-300 hover:text-white cursor-pointer"
+                className=" hover:text-white cursor-pointer"
               >
                 Contact
               </Link>
@@ -53,7 +44,7 @@ function Nav() {
 
             {/* ปุ่ม เวลาหน้าจอเล็ก กดเพื่อเลือกแท็ปไปหน้าต่าง ๆ */}
             <button
-              className="md:hidden text-gray-300 focus:text-white "
+              className="md:hidden text-[var(--text-on-dark)] focus:text-white "
               onClick={() => setItemNav(!itemNav)}
             >
               <FaListUl className="w-5 h-5 cursor-pointer" />
@@ -64,34 +55,31 @@ function Nav() {
         {/* รายการ Nav ตอนที่ขนาดหน้าจอเล็ก */}
         {itemNav && (
           <div className="md:hidden ">
-            <div className="bg-black p-4 space-y-2">
-              <Link
-                href="/"
-                className="block text-gray-300 hover:text-white cursor-pointer"
-              >
+            <div className="bg-black p-4 space-y-2 text-[var(--text-on-dark)] border-t-2 border-gray-500">
+              <Link href="/" className="block  hover:text-white cursor-pointer">
                 Home
               </Link>
               <Link
                 href="/About"
-                className="block text-gray-300 hover:text-white cursor-pointer"
+                className="block  hover:text-white cursor-pointer"
               >
                 About
               </Link>
               <Link
                 href="/Skills"
-                className="block text-gray-300 hover:text-white cursor-pointer"
+                className="block  hover:text-white cursor-pointer"
               >
                 Skills
               </Link>
               <Link
                 href="/Education"
-                className="block text-gray-300 hover:text-white cursor-pointer"
+                className="block  hover:text-white cursor-pointer"
               >
                 Education
               </Link>
               <Link
                 href="/Contact"
-                className="block text-gray-300 hover:text-white cursor-pointer"
+                className="block  hover:text-white cursor-pointer"
               >
                 Contact
               </Link>

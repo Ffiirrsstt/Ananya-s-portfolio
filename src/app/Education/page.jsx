@@ -13,21 +13,21 @@ function Page() {
   const [imgForOpen, setImgForOpen] = useState();
   const [txtShowImg, setTxtShowImg] = useState("");
   return (
-    <div className="min-h-screen flex flex-col items-center bg-[#263a44]">
+    <div className="min-h-screen flex flex-col items-center bg-[var(--bg-main-edge)]">
       <Nav />
       <div
-        className="py-20 flex-1 mx-auto space-y-20 bg-[#ececec] flex flex-col 
+        className="py-20 flex-1 mx-auto space-y-20 bg-[var(--bg-main)] flex flex-col 
         md:w-11/12"
       >
         <div className="mx-8 lg:mx-20 flex flex-col space-y-8">
           <ul>
-            <h2 className="mb-10 font-bold text-2xl lg:text-3xl block border-b border-black">
+            <h2 className="mb-10 font-bold text-2xl lg:text-3xl block border-b text-[var(--border-black)]">
               Educational Background
             </h2>
             <li className="md:ml-8 lg:ml-20">
-              <div className="flex flex-col md:flex-row items-center justify-between my-8 font-bold text-lg md:text-2xl border-b border-black">
+              <div className="flex flex-col md:flex-row items-center justify-between my-8 font-bold text-lg md:text-2xl border-b text-[var(--border-black)]">
                 <h3>Academic Achievements at the University Level</h3>
-                <h3 className="w-full text-center md:w-fit mb-2 py-2 px-6 bg-[#263a44] rounded-lg text-white">
+                <h3 className="w-full text-center md:w-fit mb-2 py-2 px-6 bg-[var(--btn-edge)] rounded-lg text-[var(--text-white)]">
                   GPA : 4.00
                 </h3>
               </div>
@@ -61,10 +61,10 @@ function Page() {
             <li className="md:ml-8 lg:ml-20">
               <div
                 className="flex flex-col md:flex-row items-center justify-between my-8 font-bold 
-              text-lg md:text-2xl border-b border-black"
+              text-lg md:text-2xl border-b text-[var(--border-black)]"
               >
                 <h3>Secondary School Academic Achievements</h3>
-                <h3 className="w-full text-center md:w-fit mb-2 py-2 px-6 bg-[#263a44] rounded-lg text-white">
+                <h3 className="w-full text-center md:w-fit mb-2 py-2 px-6 bg-[var(--btn-edge)] rounded-lg text-[var(--text-white)]">
                   GPA : 3.70
                 </h3>
               </div>

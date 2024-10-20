@@ -6,6 +6,11 @@
   --bg-img: white;
   --bg-main-edge: #263a44;
   --bg-main: #ececec;
+  --bg-block-message: #e1e1e1;
+  --btn-edge: #263a44;
+  --text-on-dark: #d1d5db;
+  --text-white: white;
+  --border-black: black;
 }
 
 /* * {
