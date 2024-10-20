@@ -34,16 +34,19 @@ function Page() {
     },
   ];
   return (
-    <div className=" bg-[#263a44]">
+    <div className="flex flex-col bg-[var(--bg-main-edge)] w-full min-h-screen">
       <Nav />
-      <div className="flex-1 min-h-auto py-20 mx-auto space-y-20  bg-[#ececec] flex flex-col md:w-11/12">
+      <div
+        className="flex-1 flex flex-col  justify-center py-5 mx-0 sm:mx-5 md:mx-auto bg-[var(--bg-main)]
+      w-100 md:w-11/12"
+      >
         <div className="mx-8 lg:mx-20">
-          <h2 className="my-2 font-bold text-3xl block border-b border-black">
+          <h2 className="pb-2 md:pb-4 font-bold text-3xl block border-b border-black">
             Contact
           </h2>
           <div
-            className="flex flex-col space-y-5 h-full w-full 
-          mb-2 border-b border-black lg:mb-0 lg:border-0"
+            className="flex flex-col space-y-3 h-auto w-full 
+          mt-2 md:mt-4 lg:mb-0"
           >
             {ContactData.map((data, index) => (
               <div key={index} className="flex space-x-5 lg:space-x-10">
