@@ -26,7 +26,9 @@ function Page() {
   return (
     <>
       <div className="bg-[#263a44]">
+        {/* <div className="bg-[#263a44]"> */}
         <Nav />
+        {/* <div className="py-20 flex-1 mx-auto space-y-20 "> */}
         <div
           className="py-20 flex-1 mx-auto space-y-20 bg-[#ececec] flex flex-col 
         md:w-11/12"

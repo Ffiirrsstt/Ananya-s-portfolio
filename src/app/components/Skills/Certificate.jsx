@@ -39,7 +39,7 @@ function Certificate({ sendOpenImg, sendImg, sendTxt }) {
             </select>
             <select
               name="Certificate"
-              className="rounded-lg px-2 mb-2 text-xl focus:outline-none text-center cursor-pointer"
+              className="w-full rounded-lg px-2 mb-2 text-xl focus:outline-none text-center cursor-pointer"
               onChange={(e) => setSelectcertificate(e.target.value)}
             >
               <option value="All">All</option>

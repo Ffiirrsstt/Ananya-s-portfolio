@@ -15,7 +15,7 @@ function ProjectSlider(props) {
         {dataArray.map((data, index) => (
           <Image
             key={index}
-            className="้h-full w-1/2 cursor-pointer"
+            className="h-full w-1/2 cursor-pointer"
             src={data}
             alt={txt}
             loading="lazy"

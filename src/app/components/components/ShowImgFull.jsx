@@ -22,13 +22,20 @@ function ShowImgFull(props) {
       transition-colors duration-100 ease-in-out"
             onClick={() => sendOpenImg(false)}
           />
-          <Image
-            className="rounded-md p-16"
-            src={imgForOpen}
-            alt={txt}
-            layout="fill"
-            objectFit="contain"
-          />
+
+          <div
+            className=" bg-[var(--bg-img)] m-24"
+            onClick={(e) => e.stopPropagation()} // ป้องกันการคลิกที่ภาพไม่ให้ปิด
+          >
+            <Image
+              className="rounded-md max-w-full max-h-screen object-contain"
+              src={imgForOpen}
+              alt={txt}
+              layout="intrinsic" // ใช้ intrinsic เพื่อให้รูปภาพมีขนาดตามภาพต้นฉบับ
+              width={1000}
+              height={800}
+            />
+          </div>
         </div>
       )}
     </>
